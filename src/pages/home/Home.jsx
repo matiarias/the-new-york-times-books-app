@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import NavBar from "../../components/navbar/NavBar";
+import Overlay from "../../components/overlay/Overlay";
 
 const Home = () => {
   const [books, setBooks] = useState([]);
@@ -26,7 +27,7 @@ const Home = () => {
   return (
     <div className="h-screen w-full">
       <NavBar />
-      <h1 className="text-black text-4xl">Home</h1>
+      <Overlay />
     </div>
   );
 };
