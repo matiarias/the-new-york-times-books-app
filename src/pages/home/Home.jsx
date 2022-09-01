@@ -12,17 +12,15 @@ const Home = () => {
         `https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=${process.env.REACT_APP_THE_NYT_BOOKS_API_KEY}`
       );
       const { results } = await resp.json();
-      return results;
+      console.log(results);
+      setBooks(results);
     } catch (error) {
       console.log(error);
     }
   };
 
   useEffect(() => {
-    booksApi().then((respuesta) => {
-      setBooks(respuesta);
-      console.log(respuesta);
-    });
+    booksApi();
   }, []);
 
   return (
