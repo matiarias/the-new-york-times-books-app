@@ -1,0 +1,34 @@
+import React from "react";
+import { useState } from "react";
+import { useEffect } from "react";
+
+const Home = () => {
+  const [books, setBooks] = useState([]);
+
+  const booksApi = async () => {
+    try {
+      const resp = await fetch(
+        `https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=${process.env.REACT_APP_THE_NYT_BOOKS_API_KEY}`
+      );
+      const { results } = await resp.json();
+      return results;
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    booksApi().then((respuesta) => {
+      setBooks(respuesta);
+      console.log(respuesta);
+    });
+  }, []);
+
+  return (
+    <div>
+      <h1 className="text-black text-4xl">Home</h1>
+    </div>
+  );
+};
+
+export default Home;
