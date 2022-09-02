@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
+import Footer from "../../components/footer/Footer";
 import FormSelects from "../../components/formulario/FormSelects";
 import NavBar from "../../components/navbar/NavBar";
 import Overlay from "../../components/overlay/Overlay";
@@ -27,7 +28,7 @@ const Home = () => {
   }, [booksCategories]);
 
   return (
-    <div className="h-screen w-full">
+    <div className="relative h-screen w-full">
       <NavBar />
       <Overlay />
       <FormSelects
@@ -94,6 +95,7 @@ const Home = () => {
           );
         })}
       </div>
+      <Footer />
     </div>
   );
 };
