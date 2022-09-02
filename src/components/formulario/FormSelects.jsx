@@ -1,12 +1,12 @@
 import React from "react";
 
-const FormSelects = ({ categorias, setCategorias }) => {
+const FormSelects = ({ booksCategories, setBooksCategories }) => {
   const handleChangeSelects = ({ target }) => {
-    setCategorias(target.value);
+    setBooksCategories(target.value);
   };
   return (
-    <div className="w-full h-[300px] sm:h-[100px] flex items-center py-8 px-12 md:py-12 md:px-16">
-      <form className="w-full flex flex-col justify-center sm:flex-row sm:justify-start sm:gap-4 md:gap-8">
+    <div className="w-full h-[250px] sm:h-[100px] flex items-center py-0 px-12 md:py-12 md:px-16">
+      <form className="w-full flex flex-col justify-center items-center sm:flex-row sm:justify-start sm:gap-4 md:gap-8">
         {/* ----------------------------------------------------------------------------- */}
         <div className="flex flex-col gap-y-2 mb-2">
           <label className="text-lg md:text-xl font-medium" htmlFor="fiction">
@@ -15,9 +15,12 @@ const FormSelects = ({ categorias, setCategorias }) => {
           <select
             className="w-[150px] sm:w-[200px] md:w-[220px] lg:w-[250] border-2 border-gray-600 rounded-t-md shadow-sm shadow-stone-500"
             id="fiction"
-            value={categorias}
+            value={booksCategories}
             onChange={handleChangeSelects}
           >
+            <option defaultValue="default" disabled>
+              Choose a category
+            </option>
             <option value="hardcover-fiction">Hardcover Fiction</option>
             <option value="combined-print-and-e-book-fiction">
               Combined Print and E-Book Fiction
@@ -38,9 +41,12 @@ const FormSelects = ({ categorias, setCategorias }) => {
           <select
             className="w-[150px] sm:w-[200px] md:w-[220px] lg:w-[250] border-2  border-gray-600 rounded-t-md shadow-sm shadow-stone-500"
             id="nonfiction"
-            value={categorias}
+            value={booksCategories}
             onChange={handleChangeSelects}
           >
+            <option defaultValue="default" disabled>
+              Choose a category
+            </option>
             <option value="hardcover-nonfiction">Hardcover Nonfiction</option>
             <option value="paperback-nonfiction">Paperback Nonfiction</option>
             <option value="combined-print-and-e-book-nonfiction">
@@ -64,9 +70,12 @@ const FormSelects = ({ categorias, setCategorias }) => {
           <select
             className="w-[150px] sm:w-[200px] md:w-[220px] lg:w-[250] border-2  border-gray-600 rounded-t-md shadow-sm shadow-stone-500"
             id="monthly-list"
-            value={categorias}
+            value={booksCategories}
             onChange={handleChangeSelects}
           >
+            <option defaultValue="default" disabled>
+              Choose a category
+            </option>
             <option value="audio-fiction">Audio Fiction</option>
             <option value="audio-nonfiction">Audio Nonfiction</option>
             <option value="graphic-books-and-manga">
