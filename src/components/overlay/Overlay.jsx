@@ -9,7 +9,7 @@ const Overlay = () => {
       <h1 className="text-3xl md:text-4xl lg:text-5xl text-black font-medium">
         The New York Times Best Sellers
       </h1>
-      <h2 className="text-base md:text-lg lg:text-xl font-medium text-gray-600">
+      <h2 className="text-base md:text-lg lg:text-xl font-medium text-gray-700">
         Authoritatively ranked lists of books sold in the United States, sorted
         by format and genre.
       </h2>

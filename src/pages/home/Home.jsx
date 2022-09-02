@@ -83,7 +83,7 @@ const Home = () => {
 
               <div className="absolute bottom-3 px-4 sm:px-6">
                 <a
-                  className="px-4 py-1 sm:px-8 bg-indigo-800 text-white font-medium rounded-md shadow-md shadow-blue-600 border-2 border-sky-700"
+                  className="px-12 py-2 sm:px-8 bg-gradient-to-r from-indigo-800 to bg-black text-white font-medium rounded-md shadow-md shadow-gray-700"
                   href={amazon_product_url}
                   target="_blank"
                 >
