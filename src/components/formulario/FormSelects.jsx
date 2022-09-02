@@ -6,14 +6,14 @@ const FormSelects = ({ booksCategories, setBooksCategories }) => {
   };
   return (
     <div className="w-full h-[250px] sm:h-[100px] flex items-center py-0 px-12 md:py-12 md:px-16">
-      <form className="w-full flex flex-col justify-center items-center sm:flex-row sm:justify-start sm:gap-4 md:gap-8">
+      <form className="w-full flex flex-col justify-center items-center sm:flex-row sm:justify-start sm:items-center gap-0 sm:gap-4 md:gap-12">
         {/* ----------------------------------------------------------------------------- */}
-        <div className="flex flex-col gap-y-2 mb-2">
+        <div className="flex flex-col gap-y-2 mb-2 sm:mb-0">
           <label className="text-lg md:text-xl font-medium" htmlFor="fiction">
             Fiction
           </label>
           <select
-            className="w-[150px] sm:w-[200px] md:w-[220px] lg:w-[250] border-2 border-gray-600 rounded-t-md shadow-sm shadow-stone-500"
+            className="w-[150px] sm:w-[200px] md:w-[220px] lg:w-[250] py-1 border-2 border-gray-600 rounded-t-md shadow-sm shadow-stone-500"
             id="fiction"
             value={booksCategories}
             onChange={handleChangeSelects}
@@ -31,7 +31,7 @@ const FormSelects = ({ booksCategories, setBooksCategories }) => {
 
         {/* -------------------------------------------------------------------------------- */}
 
-        <div className="flex flex-col gap-y-2 mb-2">
+        <div className="flex flex-col gap-y-2 mb-2 sm:mb-0">
           <label
             className="text-lg md:text-xl font-medium"
             htmlFor="nonfiction"
@@ -39,7 +39,7 @@ const FormSelects = ({ booksCategories, setBooksCategories }) => {
             Non Fiction
           </label>
           <select
-            className="w-[150px] sm:w-[200px] md:w-[220px] lg:w-[250] border-2  border-gray-600 rounded-t-md shadow-sm shadow-stone-500"
+            className="w-[150px] sm:w-[200px] md:w-[220px] lg:w-[250] py-1 border-2  border-gray-600 rounded-t-md shadow-sm shadow-stone-500"
             id="nonfiction"
             value={booksCategories}
             onChange={handleChangeSelects}
@@ -60,7 +60,7 @@ const FormSelects = ({ booksCategories, setBooksCategories }) => {
 
         {/* -------------------------------------------------------------------------------- */}
 
-        <div className="flex flex-col gap-y-2">
+        <div className="flex flex-col gap-y-2 sm:mb-0">
           <label
             className="text-lg md:text-xl font-medium"
             htmlFor="monthly-list"
@@ -68,7 +68,7 @@ const FormSelects = ({ booksCategories, setBooksCategories }) => {
             Monthly List
           </label>
           <select
-            className="w-[150px] sm:w-[200px] md:w-[220px] lg:w-[250] border-2  border-gray-600 rounded-t-md shadow-sm shadow-stone-500"
+            className="w-[150px] sm:w-[200px] md:w-[220px] lg:w-[250] py-1 border-2  border-gray-600 rounded-t-md shadow-sm shadow-stone-300"
             id="monthly-list"
             value={booksCategories}
             onChange={handleChangeSelects}
