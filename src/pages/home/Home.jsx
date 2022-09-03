@@ -46,7 +46,7 @@ const Home = () => {
         </h3>
       </div>
 
-      {/* {loading ? (
+      {loading ? (
         <div className="w-[200px] h-[200px] mx-auto">
           <Loading />
         </div>
@@ -104,7 +104,7 @@ const Home = () => {
             );
           })}
         </div>
-      )} */}
+      )}
 
       <Footer />
     </div>
