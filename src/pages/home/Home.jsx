@@ -51,7 +51,7 @@ const Home = () => {
           <Loading />
         </div>
       ) : (
-        <div className="w-full px-12 md:px-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 py-8">
+        <div className="w-full px-12 md:px-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-6 py-8">
           {bestSellers.books.map((book) => {
             const {
               rank,
