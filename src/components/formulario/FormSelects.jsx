@@ -8,6 +8,7 @@ const FormSelects = ({ booksCategories, setBooksCategories }) => {
     <div className="w-full h-[250px] sm:h-[100px] flex items-center py-0 px-12 md:py-12 md:px-16">
       <form className="w-full flex flex-col justify-center items-center sm:flex-row sm:justify-start sm:items-center gap-0 sm:gap-4 md:gap-6 lg:gap-8">
         {/* ----------------------------------------------------------------------------- */}
+
         <div className="flex flex-col gap-y-2 mb-2 sm:mb-0">
           <label className="text-lg md:text-xl font-medium" htmlFor="fiction">
             Fiction
@@ -18,7 +19,7 @@ const FormSelects = ({ booksCategories, setBooksCategories }) => {
             value={booksCategories}
             onChange={handleChangeSelects}
           >
-            <option defaultValue="default" disabled>
+            <option value="" disabled>
               Choose a category
             </option>
             <option value="hardcover-fiction">Hardcover Fiction</option>
@@ -44,7 +45,7 @@ const FormSelects = ({ booksCategories, setBooksCategories }) => {
             value={booksCategories}
             onChange={handleChangeSelects}
           >
-            <option defaultValue="default" disabled>
+            <option value="" disabled>
               Choose a category
             </option>
             <option value="hardcover-nonfiction">Hardcover Nonfiction</option>
@@ -73,7 +74,7 @@ const FormSelects = ({ booksCategories, setBooksCategories }) => {
             value={booksCategories}
             onChange={handleChangeSelects}
           >
-            <option defaultValue="default" disabled>
+            <option value="" disabled>
               Choose a category
             </option>
             <option value="audio-fiction">Audio Fiction</option>
