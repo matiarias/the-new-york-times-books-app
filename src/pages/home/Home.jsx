@@ -21,7 +21,7 @@ const Home = () => {
       );
       const { results } = await resp.json();
       // console.log(results);
-      setBestSellers(results.books);
+      setBestSellers(results);
       setLoading(false);
     } catch (error) {
       console.log(error);
@@ -40,19 +40,19 @@ const Home = () => {
         setBooksCategories={setBooksCategories}
       />
 
-      {/* <div className="py-4 px-12 md:px-16">
+      <div className="py-4 px-12 md:px-16">
         <h3 className="text-2xl lg:text-3xl text-stone-700 font-bold text-center sm:text-start">
           {bestSellers.display_name}
         </h3>
-      </div> */}
+      </div>
 
-      {loading ? (
+      {/* {loading ? (
         <div className="w-[200px] h-[200px] mx-auto">
           <Loading />
         </div>
       ) : (
         <div className="w-full px-12 md:px-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 py-8">
-          {bestSellers.map((book) => {
+          {bestSellers.books.map((book) => {
             const {
               rank,
               title,
@@ -104,7 +104,7 @@ const Home = () => {
             );
           })}
         </div>
-      )}
+      )} */}
 
       <Footer />
     </div>
