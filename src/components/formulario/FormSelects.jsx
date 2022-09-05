@@ -10,11 +10,11 @@ const FormSelects = ({ booksCategories, setBooksCategories }) => {
         {/* ----------------------------------------------------------------------------- */}
 
         <div className="flex flex-col gap-y-2 mb-2 sm:mb-0">
-          <label className="text-lg md:text-xl font-medium" htmlFor="fiction">
+          <label className="text-xl font-medium" htmlFor="fiction">
             Fiction
           </label>
           <select
-            className="w-[170px] md:w-[200px] lg:w-[250] py-1 border-2 border-gray-600 rounded-t-md shadow-sm shadow-stone-500"
+            className="w-[200px] sm:w-[180px] md:w-[200px] lg:w-[220px] py-1 border-2 border-gray-600 rounded-md shadow-md shadow-stone-600"
             id="fiction"
             value={booksCategories}
             onChange={handleChangeSelects}
@@ -33,14 +33,11 @@ const FormSelects = ({ booksCategories, setBooksCategories }) => {
         {/* -------------------------------------------------------------------------------- */}
 
         <div className="flex flex-col gap-y-2 mb-2 sm:mb-0">
-          <label
-            className="text-lg md:text-xl font-medium"
-            htmlFor="nonfiction"
-          >
+          <label className="text-xl font-medium" htmlFor="nonfiction">
             Non Fiction
           </label>
           <select
-            className="w-[170px] md:w-[200px] lg:w-[250] py-1 border-2  border-gray-600 rounded-t-md shadow-sm shadow-stone-500"
+            className="w-[200px] sm:w-[180px] md:w-[200px] lg:w-[220px] py-1 border-2  border-gray-600 rounded-md shadow-md shadow-stone-600"
             id="nonfiction"
             value={booksCategories}
             onChange={handleChangeSelects}
@@ -62,14 +59,11 @@ const FormSelects = ({ booksCategories, setBooksCategories }) => {
         {/* -------------------------------------------------------------------------------- */}
 
         <div className="flex flex-col gap-y-2 sm:mb-0">
-          <label
-            className="text-lg md:text-xl font-medium"
-            htmlFor="monthly-list"
-          >
+          <label className="text-xl font-medium" htmlFor="monthly-list">
             Monthly List
           </label>
           <select
-            className="w-[170px] md:w-[200px] lg:w-[250] py-1 border-2  border-gray-600 rounded-t-md shadow-sm shadow-stone-300"
+            className="w-[200px] sm:w-[180px] md:w-[200px] lg:w-[220px] py-1 border-2  border-gray-600 rounded-md shadow-md shadow-stone-600"
             id="monthly-list"
             value={booksCategories}
             onChange={handleChangeSelects}
